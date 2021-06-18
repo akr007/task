@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>teszt</display-name>
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>teszt.controller.LoginServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>UpdateServlet</display-name>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>teszt.controller.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>UpdateAdvertisementServlet</display-name>
+    <servlet-name>UpdateAdvertisementServlet</servlet-name>
+    <servlet-class>teszt.controller.UpdateAdvertisementServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateAdvertisementServlet</servlet-name>
+    <url-pattern>/UpdateAdvertisementServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>DeletedAvertisementServlet</display-name>
+    <servlet-name>DeletedAvertisementServlet</servlet-name>
+    <servlet-class>teszt.controller.DeletedAvertisementServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeletedAvertisementServlet</servlet-name>
+    <url-pattern>/DeletedAvertisementServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>CreateServlet</display-name>
+    <servlet-name>CreateServlet</servlet-name>
+    <servlet-class>teszt.controller.CreateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateServlet</servlet-name>
+    <url-pattern>/CreateServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>AddAvertisementServlet</display-name>
+    <servlet-name>AddAvertisementServlet</servlet-name>
+    <servlet-class>teszt.controller.AddAvertisementServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddAvertisementServlet</servlet-name>
+    <url-pattern>/AddAvertisementServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
